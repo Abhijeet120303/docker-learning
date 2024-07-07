@@ -1,0 +1,4 @@
+org\dnyanyog\controller\LoginTestControllerXML.class
+org\dnyanyog\controller\UserManagementTestControllerXML.class
+org\dnyanyog\controller\LoginTestControllerJSON.class
+org\dnyanyog\controller\UserManagementTestControllerJSON.class

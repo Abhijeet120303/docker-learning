@@ -1,0 +1,7 @@
+ARG VERSION
+
+FROM ubuntu:${VERSION}
+
+Run apt update
+
+CMD ["/bin/bash"]

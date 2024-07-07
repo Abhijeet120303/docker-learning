@@ -1,0 +1,12 @@
+FROM openjdk:24-jdk-slim
+RUN apt update
+RUN apt install -y iputils-ping
+
+WORKDIR /app
+
+COPY target/auth-service-0.0.1-SNAPSHOT.jar auth-service-0.0.1-SNAPSHOT.jar
+
+CMD ["java","-jar","auth-service-0.0.1-SNAPSHOT.jar"]
+
+# docker build -t auth-service/database:AN -f dockerfile .
+# docker run -it --rm --name mysql-auth-svc dnyanyog.org/mysql-custom:AN

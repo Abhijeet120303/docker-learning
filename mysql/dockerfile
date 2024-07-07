@@ -1,0 +1,11 @@
+FROM mysql:latest
+
+ENV MYSQL_ROOT_PASSWORD=Test@123
+ENV MYSQL_DATABASE=authentication_service_db
+
+#WORKDIR /app
+
+#COPY ./database_files  /docker-entrypoint-initdb.d/
+
+
+

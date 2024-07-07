@@ -1,0 +1,6 @@
+FROM ubuntu:latest
+
+ENV DB_USER="anirphal"
+ENV DB_PASSWORD="Test@123"
+
+CMD ["/bin/bash"]

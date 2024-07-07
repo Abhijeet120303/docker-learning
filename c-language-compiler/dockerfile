@@ -1,0 +1,10 @@
+FROm ubuntu:latest
+
+RUN apt-get update
+RUN apt-get install -y build-essential
+
+WORKDIR /app
+
+CMD ["/bin/bash"]
+
+#  docker run -it --rm -v "${PWD}:/app" c-compiler:AN gcc hello.c -o hello --static

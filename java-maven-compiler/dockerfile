@@ -1,0 +1,11 @@
+FROM ubuntu:latest
+
+RUN apt-get update
+RUN apt install -y openjdk-17-jdk
+RUN apt install -y maven
+
+WORKDIR /app
+
+# docker run -it --rm -v "${PWD}:/app" dnyanyog.org/maven-jdk:latest mvn install -f hello-service/pom.xml
+# docker run -it --rm -v "${PWD}:/app" -v C:\Users\Abhijeet\.m2:/root/.m2 dnyanyog.org/maven-jdk:latest mvn install -f hello-service/pom.xml         
+# docker run -it --rm -v "${PWD}:/app" -v maven_repo:/root/.m2 dnyanyog.org/maven-jdk:latest mvn install -f hello-service/pom.xml
